@@ -17,18 +17,25 @@ It is also a programming execise designed to teach the use of simple data struct
 
 ## Algorithm
 
-`for (int x = Objetivo; x >= 1; x--) {
+`
+A = [3, 2, 1]
+B = []
+C = []
 
-                Nodo Plataforma = new Nodo();
+def move(n, source, target, auxiliary):
+    if n > 0:
+        # Move n - 1 disks from source to auxiliary, so they are out of the way
+        move(n - 1, source, auxiliary, target)
 
-                String Disco = "";
+        # Move the nth disk from source to target
+        target.append(source.pop())
 
-                for (int y = x; y > 0; y--) {
-                    Disco += "#";
-                }
+        # Display our progress
+        print(A, B, C, '##############', sep='\n')
 
-                Plataforma.setDato(Disco);
+        # Move the n - 1 disks that we left on auxiliary onto target
+        move(n - 1, auxiliary, target, source)
 
-                pilaTorreA.Push(Plataforma);
-                
-            }`
+# Initiate call from source A to target C with auxiliary B
+move(3, A, C, B)
+`

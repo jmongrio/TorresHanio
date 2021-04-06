@@ -17,7 +17,7 @@ It is also a programming execise designed to teach the use of simple data struct
 
 ## Algorithm
 
-`
+``
 A = [3, 2, 1]
 B = []
 C = []
@@ -38,4 +38,4 @@ def move(n, source, target, auxiliary):
 
 # Initiate call from source A to target C with auxiliary B
 move(3, A, C, B)
-`
+``

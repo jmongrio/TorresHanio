@@ -1,5 +1,5 @@
 # Towers of Hanoy
-An exercise of "towers of Hanoy"
+Exercise of "towers of Hanoy"
 
 ## Table of Contents
 * [Explanation](#Explanation)
